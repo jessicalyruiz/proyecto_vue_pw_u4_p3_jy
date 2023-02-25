@@ -1,5 +1,6 @@
 <template>
- <BuscarPorCedula/>
+ 
+ <router-view/>
 </template>
 
 <script>
