@@ -3,6 +3,10 @@
   <input v-model="cedula" type="text">
     <button v-on:click="consultarCliente">Consultar</button>
     <button v-on:click="insertar">Insertar</button>
+
+    <h2>{{ id }}</h2>
+
+    <button  v-on:click="procesar">Procesar</button>
 </template>
 
 <script>
@@ -12,8 +16,13 @@ import {obtenerClientePorCedulaFachada,insertarFachada} from "../js/api_facturac
 export default {
     data(){
         return{
-        cedula:null
+        cedula:null,
+        id:null
     }
+    },
+    mounted(){
+        console.log('entro a buscar')
+        console.log(this.$router)
     },
     methods:{
         consultarCliente(){
@@ -31,6 +40,10 @@ export default {
             
         }
         insertarFachada(miCliente);
+    },
+
+    procesar(){
+        console.log(this.id)
     }}
 }
 </script>
