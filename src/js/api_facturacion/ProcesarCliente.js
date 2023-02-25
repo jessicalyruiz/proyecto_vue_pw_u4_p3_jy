@@ -28,7 +28,7 @@ const obtenerClientePorCedula=async(cedula)=>{
    const datos=axios.get(`http://localhost:8081/API/Facturacion/V1/clientes/${cedula}`).then(r=>r.data)
    console.log(datos)
    //console.log("apellido"+apellido)
-   //console.log(cedula)
+   //console.log(cedula) 
    return datos
 }
 const insertar=async(body)=>{
