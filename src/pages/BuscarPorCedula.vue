@@ -3,6 +3,10 @@
   <input v-model="cedula" type="text">
     <button v-on:click="consultarCliente">Consultar</button>
     <button v-on:click="insertar">Insertar</button>
+
+    <h2>{{ cedula }}</h2>
+
+    <button  v-on:click="procesar">Procesar</button>
 </template>
 
 <script>
@@ -14,6 +18,10 @@ export default {
         return{
         cedula:null
     }
+    },
+    mounted(){
+        console.log('entro a buscar')
+        console.log(this.$router)
     },
     methods:{
         consultarCliente(){
@@ -31,7 +39,11 @@ export default {
             
         }
         insertarFachada(miCliente);
-    }}
+    },
+    procesar(){
+        console.log(this.cedula)
+    }
+}
 }
 </script>
 

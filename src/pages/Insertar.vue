@@ -15,7 +15,14 @@
 
 <script>
 export default {
+  data(){
 
+  },
+  mounted(){
+    console.log("entro inssettar")
+    console.log(this.$route)
+    console.log(this.$route.query)
+  }
 }
 </script>
 

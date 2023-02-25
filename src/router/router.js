@@ -33,7 +33,7 @@ const routes = [
         component: () => import(/*webpackChunkName: "Actualizar"*/ '../pages/Actualizar')
     },
     {
-        path: '/buscar',
+        path: '/buscar/:id',
         component: () => import(/*webpackChunkName: "Buscar"*/ '../pages/BuscarPorCedula')
     },
     {
