@@ -8,8 +8,8 @@
   <input v-model="cedula" type="text">
   <h3>genero</h3>
   <input v-model="genero" type="text">
-    <button v-on:click="consultarCliente">Actualizar</button>
    
+    <button type="button" class="btn btn-outline-primary" v-on:click="consultarCliente">Actualizar</button>
 </template>
 
 <script>

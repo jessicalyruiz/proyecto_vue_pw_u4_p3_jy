@@ -3,8 +3,8 @@
 
   <h3>id</h3>
   <input v-model="id" type="text">
-    <button v-on:click="eliminarCliente">Eliminar</button>
-   
+    
+    <button type="button" class="btn btn-outline-primary" v-on:click="eliminarCliente">Eliminar</button>
 </template>
 
 <script>

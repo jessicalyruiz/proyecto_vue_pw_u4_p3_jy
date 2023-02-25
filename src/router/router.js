@@ -61,8 +61,10 @@ router.beforeEach((to,from,next)=>{
     const random=Math.random()*10
     if(random>5){
         console.log('Aurotizado')
+        next()
     }else{
         console.log('No autorizado')
+        next({name:'403'})
     }
 
 

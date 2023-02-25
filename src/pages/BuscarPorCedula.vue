@@ -3,7 +3,7 @@
   <input v-model="cedula" type="text">
     <button v-on:click="consultarCliente">Consultar</button>
     <button v-on:click="insertar">Insertar</button>
-
+    <button type="button" class="btn btn-outline-primary" v-on:click="insertar">Primary</button>
     <h2>{{ id }}</h2>
 
     <button  v-on:click="procesar">Procesar</button>

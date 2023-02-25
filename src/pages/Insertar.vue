@@ -9,7 +9,7 @@
   <input v-model="cedula" type="text">
   <h3>genero</h3>
   <input v-model="genero" type="text">
-    <button>Insertar</button>
+  <button type="button" class="btn btn-outline-primary">Insertar</button>
    
 </template>
 
